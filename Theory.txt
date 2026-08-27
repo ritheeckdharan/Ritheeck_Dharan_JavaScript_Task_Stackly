@@ -1,0 +1,245 @@
+Theory:
+
+1.What is a variable in JavaScript ?
+
+Ans:A variable in JavaScript is a named container used to store data values such as numbers, text, or objects. Variables help us save and reuse information in a program. They can be declared using var, let, or const. 
+The stored value can also be changed later when using let or var.
+
+2.What are the three keywords used to create variables ?
+
+The three keywords used to create variables in JavaScript are:
+1.var
+2.let
+3.const
+Each keyword is used to declare and store data in a variable.
+
+3.Write the syntax to create a variable using var. ?
+Ans:The syntax to create a variable using var is:
+
+var variableName = value;
+
+Example: var name = "John";
+
+4.Write the syntax to create a variable using let. ?
+Ans:The syntax to create a variable using **let** is:
+
+let variableName = value;
+
+Example: let age = 25;
+
+5.Write the syntax to create a variable using const. ?
+Ans:The syntax to create a variable using const is:
+
+const variableName = value;
+
+Example: const age = 25;
+
+6.What is declaration ?
+Ans:**Declaration** is the process of creating a variable by giving it a name. In JavaScript, variables can be declared using `var`, `let`, or `const`.
+
+Example: `let age;`
+
+7.What is initialization ?
+
+Ans:Initialization is the process of assigning a value to a variable when it is created.
+
+Example: let age = 25;
+
+8.What is reassignment?
+Ans:Reassignment is the process of changing the value of an already declared variable.
+
+Example: let age = 25;
+Later: age = 30;
+
+
+9.What is redeclaration?
+Ans:Redeclaration is the process of declaring the same variable again using the same variable name.
+
+Example: var age = 25; var age = 30;
+
+10.Which keyword allows redeclaration?
+
+Ans:The var keyword allows redeclaration of a variable.
+
+Example: var age = 25; var age = 30;
+
+11.Which keyword allows reassignment ?
+Ans:The var and let keywords allow reassignment of a variable.
+
+Example: let age = 25; age = 30;
+
+12.Which keyword requires initialization when declared ?
+
+Ans:The const keyword requires initialization when it is declared.
+
+Example: const age = 25;
+
+13.Identify the declaration and initialization:
+
+let age = 25;
+Ans:In let age = 25;, declaration means creating the variable with the name age using the let keyword. Initialization means assigning the initial value 25 to the variable.
+
+Declaration: let age
+Initialization: = 25
+
+
+14.What is the value of a?
+
+var a = 100;
+console.log(a);
+
+Ans:The value of a is 100.
+console.log(a); will display 100 in the console.
+
+15.Change the value of this variable to 200:
+let number = 100 ?
+
+Ans:Using var, you can reassign the value like this:
+
+var number = 100;
+number = 200;
+
+Now, the value of number is 200.
+
+
+//var
+23.Can a var variable be reassigned?
+
+Ans:Yes, a var variable can be reassigned. This means its value can be changed after it is declared.
+
+Example: var age = 25; age = 30;
+
+
+24.Can a var variable be redeclared?
+Ans:Yes, a var variable can be redeclared using the same variable name in the same scope.
+
+Example: var age = 25; var age = 30;
+
+The value of age will be 30.
+
+25.Write an example of var redeclaration ?
+
+Ans:Example of `var` redeclaration:
+
+var age = 25;
+var age = 30;
+
+Here, the same variable `age` is declared again using `var`. The final value is **30**.
+
+28.Can a let variable be reassigned ?
+
+Ans:Yes, a let variable can be reassigned. Its value can be changed after declaration.
+
+Example: let age = 25; age = 30;
+
+The new value of age is 30.
+
+29.Can a let variable be redeclared ?
+
+Ans:No, a let variable cannot be redeclared in the same scope.
+
+Example: let age = 25; let age = 30; 
+
+This will result in a SyntaxError.
+
+30.Find the error:
+let name = "John";
+let name = "David";
+
+Ans:The error is that the let variable name is redeclared in the same scope.
+
+let name = "John";
+let name = "David"; 
+
+This causes a SyntaxError: Identifier 'name' has already been declared.
+
+37.Can a const variable be reassigned?
+
+Ans:, a const variable cannot be reassigned after it is initialized.
+Example: const age = 25; age = 30; 
+This will result in a TypeError.
+
+
+38.Can a const variable be redeclared ?
+
+Ans:No, a const variable cannot be redeclared in the same scope.
+Example: const age = 25; const age = 30; 
+This will result in a SyntaxError
+
+39.What is wrong with this code?
+const age;
+age = 25
+
+Ans:The error is that a **`const` variable must be initialized when it is declared**.
+`const age;` 
+`age = 25;`
+Correct code:
+`const age = 25;` 
+A `const` variable cannot be declared without assigning a value.
+
+40.What happens here?
+const price = 500;
+price = 1000;
+
+Ans:It will cause a TypeError because a const variable cannot be reassigned after it has been initialized.
+
+const price = 500;
+price = 1000; 
+
+The value of price remains 500.
+
+43.Which keyword should you use if the value should not be reassigned ?
+
+Ans:You should use the **`const`** keyword if the value should not be reassigned.
+
+Example: `const age = 25;`
+
+The value of `age` cannot be changed later.
+
+44.What is the difference between let and const ?
+
+Ans:The main difference between let and const is that a let variable can be reassigned, while a const variable cannot be reassigned after initialization.
+
+Example:
+let age = 25; age = 30; 
+const age = 25; age = 30; 
+
+Both let and const cannot be redeclared in the same scope.
+
+45.What is the difference between var and const ?
+
+Ans:The main difference between var and const is that a var variable can be reassigned and redeclared, while a const variable cannot be reassigned or redeclared in the same scope.
+
+Example:
+var age = 25; age = 30; 
+var age = 30; 
+
+const age = 25; age = 30; 
+const age = 30; 
+
+Printing & Console
+
+48.What is the purpose of console.warn()?
+
+Ans:console.warn() is used to display warning messages in the browser console. 
+It helps developers identify potential problems or important information without stopping the program.
+Example: console.warn("This is a warning");
+
+49.What is the purpose of console.error()?
+Ans:console.error() is used to display error messages in the browser console. It helps developers identify and debug errors in their JavaScript code.
+Example: console.error("Something went wrong");
+
+50.What is the purpose of each?
+alert()
+prompt()
+confirm()
+document.writeln()
+console.log() ?
+
+Ans:The purpose of each JavaScript function is:
+
+alert() – Displays a message or warning to the user.
+prompt() – Takes input from the user through a dialog box.
+confirm() – Asks the user to confirm an action with **OK** or **Cancel**.
+document.writeln() – Writes content directly into the HTML document.
+console.log() – Displays messages or values in the browser console for debugging.
