@@ -1,7 +1,7 @@
 //Task 4 - JavaScript loops
 
 // Task 1 — For Loop
-for(i=1;i<=10;i++){
+for(let i=1;i<=10;i++){
     console.log(i);
 }
 //The Output is
@@ -17,7 +17,7 @@ for(i=1;i<=10;i++){
 //10
 
 // Task 2 — Reverse Number
-for(i=10;i>=1;i--){
+for( let i=10;i>=1;i--){
   console.log(i)
 }
 //The Output is
@@ -35,7 +35,7 @@ for(i=10;i>=1;i--){
 
 // Task 3 — Even Numbers
 
-for(i=1;i<=10;i++){
+for( leti=1;i<=10;i++){
   console.log(i*2);
 }
 
@@ -53,7 +53,7 @@ for(i=1;i<=10;i++){
 
 //Task 4 — Odd Numbers
 
-for(i=1;i<=20;i++){
+for( let i=1;i<=20;i++){
     if(i%2!=0){
       console.log(i);
     }
@@ -72,7 +72,7 @@ for(i=1;i<=20;i++){
 //19
 
 //Task 5 — Multiplication Table
-for(i=1;i<=10;i++){
+for( let i=1;i<=10;i++){
     console.log("5 x",i,"=",i*5);
 }
 //The Output is
@@ -89,7 +89,7 @@ for(i=1;i<=10;i++){
 
 //While Loop
 //Task 6 — Countdown
-i=10
+let i=10
 while(i>=1){
     console.log(i);
   i--;
