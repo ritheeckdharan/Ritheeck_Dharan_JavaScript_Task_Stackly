@@ -399,19 +399,19 @@ console.log(mul);
 
     if (true) {
 
-        //var a1 = 10;
-        //let b1 = 20;
-        //const c1 = 30;
+        var a1 = 10;
+        let b1 = 20;
+        const c1 = 30;
 
-        //console.log(a1);
-        //console.log(b1);
-        //console.log(c1);
+        console.log(a1);
+        console.log(b1);
+        console.log(c1);
     }
 
-    //console.log(a1);
-    //console.log(b1);
-    //console.log(c1);
-//}
+    console.log(a1);
+    console.log(b1);
+    console.log(c1);
+}
 
 //test();
 //The Output is
@@ -446,9 +446,9 @@ var a2 = 10;
 //Even though JavaScript knows variable b exists, it stays in a "dead zone" from the start of the code until the line let b = 20; is reached. 
 //Trying to print b before that line causes a ReferenceError instead of giving undefined.
 
-//console.log(b2);
+console.log(b2);
 
-// let b2 = 20;
+let b2 = 20;
 
 //The Output is
 // Uncaught ReferenceError: Cannot access 'b2' before initialization
@@ -464,9 +464,9 @@ var a2 = 10;
 //Just like let, const variables stay in a "dead zone" until the line const c = 30; is reached. 
 //Trying to print c before that line causes a ReferenceError.
 
-//console.log(c2);
+console.log(c2);
 
-//const c2 = 30;
+const c2 = 30;
 
 //The Output is
 // Uncaught ReferenceError: Cannot access 'c2' before initialization
